@@ -1,13 +1,13 @@
-// using UnityEngine;
+using UnityEngine;
 
-// class Scientist : Character {
+class Scientist : Character {
 
-//   public Scientist() : base(100, 0, 5) {
-//     // Do something
-//   }
+  public Scientist(int hp, int armor, int damage) : base(hp, armor, damage) {
+    // Do something
+  }
 
-//   public override void useAbility() {
-//     // Do something
-//   }
+  public override void useAbility(Character target) {
+    // Do something
+  }
 
-// }
+}

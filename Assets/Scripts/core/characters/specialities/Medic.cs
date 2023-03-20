@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class Medic : Character {
 
-  public Medic() {
-
+  public Medic(int hp, int armor, int damage) : base(hp, armor, damage) {
+    // Do something
   }
 
   public override void useAbility(Character target) {
-    if(target.getHP() < 0) {
+    if(!target.isCharacterAlive()) {
       return;
     }
 
