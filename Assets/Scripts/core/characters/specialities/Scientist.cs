@@ -1,13 +1,15 @@
 using UnityEngine;
 
-class Scientist : Character {
+namespace Specialities {
+  class Scientist : Character {
 
-  public Scientist(int hp, int armor, int damage) : base(hp, armor, damage) {
-    // Do something
+    public Scientist() : base(100, 5, 5) {
+      // Do something
+    }
+
+    public override void useAbility(Character target) {
+      // Do something
+    }
+
   }
-
-  public override void useAbility(Character target) {
-    // Do something
-  }
-
 }
